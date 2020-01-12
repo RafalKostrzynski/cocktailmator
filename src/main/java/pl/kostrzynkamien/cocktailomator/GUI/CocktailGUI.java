@@ -97,7 +97,7 @@ public class CocktailGUI extends VerticalLayout {
             favouriteGridSet(gridSharedCocktail);
             facebookShareGui.init(gridSharedCocktail);
             try {
-                Runtime.getRuntime().exec( "rundll32 url.dll,FileProtocolHandler " + "https://cocktailmator.herokuapp.com/share");
+                Runtime.getRuntime().exec( "rundll32 url.dll,FileProtocolHandler " + "https://www.facebook.com/sharer.php?u=https://cocktailmator.herokuapp.com/share");
             } catch (Exception e) {
                 Notification.show("Connection Error!",
                         5000, Notification.Position.TOP_CENTER);
