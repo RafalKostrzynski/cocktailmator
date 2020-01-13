@@ -72,7 +72,7 @@ public class CocktailGUI extends VerticalLayout {
         horizontalLayoutForFavouriteGrid.add(buttonCreateNewCocktail,buttonDeleteFavouriteCocktail,buttonPostOnFacebook);
         horizontalLayoutForApiTextFields.add(textFieldName,textFieldIngredient);
         horizontalLayoutForApiButtons.add(buttonSearchByName,buttonSearchIngredient,buttonGetRandomCocktail);
-        horizontalLayoutForApiButtons.setWidth("200px");
+        horizontalLayoutForApiButtons.setWidth("400px");
         add(favouriteGrid,horizontalLayoutForFavouriteGrid,horizontalLayoutForApiTextFields,horizontalLayoutForApiButtons,specificAndRandomGrid,buttonAddFavourite);
     }
 
