@@ -6,13 +6,14 @@ import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.notification.Notification;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 import pl.kostrzynkamien.cocktailomator.Model.FavouriteCocktail;
 import pl.kostrzynkamien.cocktailomator.Model.Recipe;
-import pl.kostrzynkamien.cocktailomator.Service.CocktailControler;
+import pl.kostrzynkamien.cocktailomator.Service.CocktailController;
 import pl.kostrzynkamien.cocktailomator.Service.CocktailService;
 
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ import java.util.ArrayList;
 @Route("cocktail")
 public class CocktailGUI extends VerticalLayout {
 
-    private CocktailControler cocktailControler;
+    private CocktailController cocktailController;
     private CocktailService cocktailService;
     private FacebookShareGui facebookShareGui;
     private TextField textFieldName,textFieldIngredient;
@@ -34,10 +35,12 @@ public class CocktailGUI extends VerticalLayout {
     private Button buttonPostOnFacebook;
     private Grid<Recipe> specificAndRandomGrid;
     private Grid<FavouriteCocktail> favouriteGrid;
-
+    private HorizontalLayout horizontalLayoutForFavouriteGrid;
+    private HorizontalLayout horizontalLayoutForApiTextFields;
+    private HorizontalLayout horizontalLayoutForApiButtons;
 
     @Autowired
-    public CocktailGUI(CocktailControler cocktailControler, CocktailService cocktailService, FacebookShareGui facebookShareGui) {
+    public CocktailGUI(CocktailController cocktailController, CocktailService cocktailService, FacebookShareGui facebookShareGui) {
         this.facebookShareGui=facebookShareGui;
         this.cocktailService=cocktailService;
         fieldsInit();
@@ -57,17 +60,20 @@ public class CocktailGUI extends VerticalLayout {
             favouriteDeleter(cocktailService);
         });
         buttonGetRandomCocktail.addClickListener(clickEvent -> {
-            getCocktailAndDisplay(cocktailControler, "https://www.thecocktaildb.com/api/json/v1/1/random.php", "Cocktail not found");
+            getCocktailAndDisplay(cocktailController, "https://www.thecocktaildb.com/api/json/v1/1/random.php", "Cocktail not found");
         });
         buttonSearchByName.addClickListener(clickEvent -> {
-            getCocktailAndDisplay(cocktailControler, "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="+
+            getCocktailAndDisplay(cocktailController, "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="+
                     textFieldName.getValue().replaceAll(" ","_"), "Connection error! Try again later");
         });
         buttonSearchIngredient.addClickListener(clickEvent -> {
-            showIngredientInfo(cocktailControler);
+            showIngredientInfo(cocktailController);
         });
-        add(favouriteGrid,buttonCreateNewCocktail,buttonDeleteFavouriteCocktail, textFieldName,buttonSearchByName,textFieldIngredient,
-                buttonSearchIngredient,buttonGetRandomCocktail,specificAndRandomGrid,buttonAddFavourite,buttonPostOnFacebook);
+        horizontalLayoutForFavouriteGrid.add(buttonCreateNewCocktail,buttonDeleteFavouriteCocktail,buttonPostOnFacebook);
+        horizontalLayoutForApiTextFields.add(textFieldName,textFieldIngredient);
+        horizontalLayoutForApiButtons.add(buttonSearchByName,buttonSearchIngredient,buttonGetRandomCocktail);
+        horizontalLayoutForApiButtons.setWidth("200px");
+        add(favouriteGrid,horizontalLayoutForFavouriteGrid,horizontalLayoutForApiTextFields,horizontalLayoutForApiButtons,specificAndRandomGrid,buttonAddFavourite);
     }
 
     private void postOnFacebook() {
@@ -110,20 +116,20 @@ public class CocktailGUI extends VerticalLayout {
         }
     }
 
-    private void showIngredientInfo(CocktailControler cocktailControler) {
+    private void showIngredientInfo(CocktailController cocktailController) {
         Dialog dialog=new Dialog();
-        if(cocktailControler.getIngredientInfo(textFieldIngredient.getValue().replaceAll(" ","_"))!=null)
+        if(cocktailController.getIngredientInfo(textFieldIngredient.getValue().replaceAll(" ","_"))!=null)
         {
-            dialog.add(new Label(cocktailControler.getIngredientInfo(textFieldIngredient.getValue().replaceAll(" ","_"))));
+            dialog.add(new Label(cocktailController.getIngredientInfo(textFieldIngredient.getValue().replaceAll(" ","_"))));
             setDialog(dialog);
         }
             else Notification.show("Ingredient not found",
                 5000, Notification.Position.TOP_CENTER);
     }
 
-    private void getCocktailAndDisplay(CocktailControler cocktailControler, String url, String message) {
-        if (cocktailControler.getRecipies(url) != null)
-            specificAndRandomGrid.setItems(cocktailControler.getRecipies(url));
+    private void getCocktailAndDisplay(CocktailController cocktailController, String url, String message) {
+        if (cocktailController.getRecipies(url) != null)
+            specificAndRandomGrid.setItems(cocktailController.getRecipies(url));
         else Notification.show(message,
                 5000, Notification.Position.TOP_CENTER);
     }
@@ -232,6 +238,10 @@ public class CocktailGUI extends VerticalLayout {
         buttonCreateNewCocktail = new Button("Click to create a new cocktail");
         buttonDeleteFavouriteCocktail = new Button("Click to delete a cocktail");
         buttonPostOnFacebook = new Button("Post on facebook");
+        horizontalLayoutForApiTextFields=new HorizontalLayout();
+        horizontalLayoutForApiButtons=new HorizontalLayout();
+        horizontalLayoutForFavouriteGrid=new HorizontalLayout();
+
     }
 
     private void specificAndRandomGridSet(Grid<Recipe> grid) {

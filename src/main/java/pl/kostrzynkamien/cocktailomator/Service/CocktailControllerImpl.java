@@ -11,7 +11,7 @@ import java.util.List;
 
 
 @Controller
-public class CocktailControllerImpl implements CocktailControler{
+public class CocktailControllerImpl implements CocktailController {
 
     public CocktailControllerImpl() {
     }
