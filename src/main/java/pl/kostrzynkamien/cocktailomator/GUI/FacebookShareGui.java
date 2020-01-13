@@ -12,7 +12,7 @@ public class FacebookShareGui extends VerticalLayout {
     private Grid<FavouriteCocktail> favouriteCocktailGrid;
     private FavouriteCocktail favouriteCocktail;
 
-    public void init(Grid<FavouriteCocktail> favouriteCocktailGrid){
+    public void init(Grid<FavouriteCocktail> favouriteCocktailGrid) {
         add(favouriteCocktailGrid);
     }
 }

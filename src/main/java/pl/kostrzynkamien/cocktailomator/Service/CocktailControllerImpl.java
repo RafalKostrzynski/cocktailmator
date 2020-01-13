@@ -17,7 +17,7 @@ public class CocktailControllerImpl implements CocktailController {
     }
 
     @Override
-    public List<Recipe> getRecipies(String link){
+    public List<Recipe> getRecipies(String link) {
         RestTemplate restTemplate = new RestTemplate();
         Cocktail cocktail = restTemplate.getForObject(link, Cocktail.class);
         if (cocktail.getRecipes() != null) return new ArrayList<>(cocktail.getRecipes());
@@ -32,10 +32,8 @@ public class CocktailControllerImpl implements CocktailController {
             info = restTemplate.getForObject("https://www.thecocktaildb.com/api/json/v1/1/search.php?i=" + ingredient,
                     JsonNode.class).get("ingredients").get(0).get("strDescription").toString();
             return info;
-        }catch (NullPointerException e) {
+        } catch (NullPointerException e) {
             return null;
         }
     }
-
-
 }

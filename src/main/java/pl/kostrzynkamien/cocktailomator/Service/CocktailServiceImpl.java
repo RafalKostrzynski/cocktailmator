@@ -8,7 +8,7 @@ import pl.kostrzynkamien.cocktailomator.Repo.CocktailRepo;
 import java.util.List;
 
 @Service
-public class CocktailServiceImpl implements CocktailService{
+public class CocktailServiceImpl implements CocktailService {
 
     private CocktailRepo cocktailRepo;
 
@@ -24,17 +24,17 @@ public class CocktailServiceImpl implements CocktailService{
 
     @Override
     public Boolean addFavouriteCocktail(FavouriteCocktail favouriteCocktail) {
-        try{
+        try {
             cocktailRepo.save(favouriteCocktail);
             return true;
-        }catch(Exception e){
+        } catch (Exception e) {
             return false;
         }
     }
 
     @Override
     public Boolean deleteFavouriteCocktailById(long id) {
-        if(cocktailRepo.findById(id).isPresent()) {
+        if (cocktailRepo.findById(id).isPresent()) {
             cocktailRepo.deleteById(id);
             return true;
         }

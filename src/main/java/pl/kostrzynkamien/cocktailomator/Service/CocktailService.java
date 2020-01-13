@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface CocktailService {
     List<FavouriteCocktail> getAllFavouriteCocktails();
+
     Boolean addFavouriteCocktail(FavouriteCocktail favouriteCocktail);
+
     Boolean deleteFavouriteCocktailById(long id);
 }

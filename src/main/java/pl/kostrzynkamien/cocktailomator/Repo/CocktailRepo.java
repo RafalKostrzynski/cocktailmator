@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import pl.kostrzynkamien.cocktailomator.Model.FavouriteCocktail;
 
 @Repository
-public interface CocktailRepo extends JpaRepository<FavouriteCocktail,Long> {
+public interface CocktailRepo extends JpaRepository<FavouriteCocktail, Long> {
 }
