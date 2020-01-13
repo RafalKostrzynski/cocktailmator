@@ -36,8 +36,10 @@ public class CocktailGUI extends VerticalLayout {
     private Grid<Recipe> specificAndRandomGrid;
     private Grid<FavouriteCocktail> favouriteGrid;
     private HorizontalLayout horizontalLayoutForFavouriteGrid;
-    private HorizontalLayout horizontalLayoutForApiTextFields;
-    private HorizontalLayout horizontalLayoutForApiButtons;
+    private HorizontalLayout horizontalLayoutForApi;
+    private VerticalLayout verticalLayoutForIngredient;
+    private VerticalLayout verticalLayoutForCocktail;
+
 
     @Autowired
     public CocktailGUI(CocktailController cocktailController, CocktailService cocktailService, FacebookShareGui facebookShareGui) {
@@ -70,10 +72,10 @@ public class CocktailGUI extends VerticalLayout {
             showIngredientInfo(cocktailController);
         });
         horizontalLayoutForFavouriteGrid.add(buttonCreateNewCocktail,buttonDeleteFavouriteCocktail,buttonPostOnFacebook);
-        horizontalLayoutForApiTextFields.add(textFieldName,textFieldIngredient);
-        horizontalLayoutForApiButtons.add(buttonSearchByName,buttonSearchIngredient,buttonGetRandomCocktail);
-        horizontalLayoutForApiButtons.setWidth("630px");
-        add(favouriteGrid,horizontalLayoutForFavouriteGrid,horizontalLayoutForApiTextFields,horizontalLayoutForApiButtons,specificAndRandomGrid,buttonAddFavourite);
+        verticalLayoutForIngredient.add(textFieldIngredient,buttonSearchIngredient);
+        verticalLayoutForCocktail.add(textFieldName,buttonSearchByName);
+        horizontalLayoutForApi.add(verticalLayoutForCocktail,verticalLayoutForIngredient);
+        add(favouriteGrid,horizontalLayoutForFavouriteGrid,horizontalLayoutForApi,buttonGetRandomCocktail,specificAndRandomGrid,buttonAddFavourite);
     }
 
     private void postOnFacebook() {
@@ -238,9 +240,10 @@ public class CocktailGUI extends VerticalLayout {
         buttonCreateNewCocktail = new Button("Click to create a new cocktail");
         buttonDeleteFavouriteCocktail = new Button("Click to delete a cocktail");
         buttonPostOnFacebook = new Button("Post on facebook");
-        horizontalLayoutForApiTextFields=new HorizontalLayout();
-        horizontalLayoutForApiButtons=new HorizontalLayout();
+        horizontalLayoutForApi=new HorizontalLayout();
         horizontalLayoutForFavouriteGrid=new HorizontalLayout();
+        verticalLayoutForIngredient=new VerticalLayout();
+        verticalLayoutForCocktail=new VerticalLayout();
 
     }
 
