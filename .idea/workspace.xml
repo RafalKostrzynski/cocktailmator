@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c658a87b-0da1-4b40-85c3-03417f038a3b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/GUI/CocktailGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/GUI/CocktailGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/GUI/FacebookShareGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/GUI/FacebookShareGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Model/Cocktail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Model/Cocktail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Model/FavouriteCocktail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Model/FavouriteCocktail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Model/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Model/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Repo/CocktailRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Repo/CocktailRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Service/CocktailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Service/CocktailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Service/CocktailControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Service/CocktailControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Service/CocktailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Service/CocktailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Service/CocktailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kostrzynkamien/cocktailomator/Service/CocktailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/kostrzynkamien/cocktailomator/Service/CocktailControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/kostrzynkamien/cocktailomator/Service/CocktailControllerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/kostrzynkamien/cocktailomator/GUI/CocktailGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/kostrzynkamien/cocktailomator/GUI/CocktailGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/cocktailomator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/kostrzynkamien/cocktailomator/Service/CocktailControllerImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/kostrzynkamien/cocktailomator/Service/CocktailControllerImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CocktailControllerImplTest">
+  <component name="RunManager" selected="Spring Boot.CocktailomatorApplication">
     <configuration name="CocktailControllerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cocktailomator" />
       <extension name="coverage">
@@ -221,6 +212,13 @@
       <workItem from="1578918578987" duration="8696000" />
       <workItem from="1578928026127" duration="3230000" />
       <workItem from="1578934947762" duration="1513000" />
+      <workItem from="1578937473791" duration="284000" />
+      <workItem from="1579012305955" duration="3270000" />
+      <workItem from="1579109748514" duration="165000" />
+      <workItem from="1579109935063" duration="177000" />
+      <workItem from="1579113681354" duration="281000" />
+      <workItem from="1579178899630" duration="619000" />
+      <workItem from="1579179727923" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="Database and connection to api">
       <created>1577982649064</created>
@@ -347,10 +345,10 @@
     </state>
     <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1578073830536" />
     <state x="638" y="108" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1578919923814" />
-    <state x="689" y="337" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578658825647">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state x="620" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578937480927">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="620" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1578059261398" />
+    <state x="620" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1578937480927" />
     <state x="689" y="337" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1707.920@0.0.1707.920" timestamp="1578658825647" />
     <state x="566" y="273" width="442" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577978013704">
       <screen x="0" y="0" width="1536" height="824" />
@@ -370,58 +368,58 @@
     </state>
     <state x="506" y="233" width="874" height="591" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1578244190378" />
     <state x="274" y="294" width="1340" height="590" key="#xdebugger.evaluate/0.0.1707.920@0.0.1707.920" timestamp="1578929556477" />
-    <state x="278" y="60" key="CommitChangelistDialog2" timestamp="1578922237374">
+    <state x="278" y="60" key="CommitChangelistDialog2" timestamp="1578936622932">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="569" y="16" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578257200054" />
-    <state x="278" y="60" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1578922237374" />
+    <state x="278" y="60" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1578936622932" />
     <state x="119" y="49" key="DiffContextDialog" timestamp="1578864856316">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="119" y="49" key="DiffContextDialog/0.0.1707.920@0.0.1707.920" timestamp="1578864856316" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1578406345213">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1579113960813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578406345213" />
-    <state width="1664" height="499" key="GridCell.Tab.0.bottom" timestamp="1578936561425">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579113960813" />
+    <state width="1493" height="325" key="GridCell.Tab.0.bottom" timestamp="1579181233981">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578406547966" />
+    <state width="1493" height="325" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579181233981" />
     <state width="1664" height="499" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1578936561425" />
-    <state width="1664" height="499" key="GridCell.Tab.0.center" timestamp="1578936561425">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="325" key="GridCell.Tab.0.center" timestamp="1579181233981">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578406547965" />
+    <state width="1493" height="325" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579181233981" />
     <state width="1664" height="499" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1578936561425" />
-    <state width="1664" height="499" key="GridCell.Tab.0.left" timestamp="1578936561425">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="325" key="GridCell.Tab.0.left" timestamp="1579181233981">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578406547965" />
+    <state width="1493" height="325" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579181233981" />
     <state width="1664" height="499" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1578936561425" />
-    <state width="1664" height="499" key="GridCell.Tab.0.right" timestamp="1578936561425">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="325" key="GridCell.Tab.0.right" timestamp="1579181233981">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578406547966" />
+    <state width="1493" height="325" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579181233981" />
     <state width="1664" height="499" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1578936561425" />
-    <state width="1664" height="499" key="GridCell.Tab.1.bottom" timestamp="1578935177160">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="325" key="GridCell.Tab.1.bottom" timestamp="1579181233982">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578406547966" />
+    <state width="1493" height="325" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579181233982" />
     <state width="1664" height="499" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1578935177160" />
-    <state width="1664" height="499" key="GridCell.Tab.1.center" timestamp="1578935177160">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="325" key="GridCell.Tab.1.center" timestamp="1579181233981">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578406547966" />
+    <state width="1493" height="325" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579181233981" />
     <state width="1664" height="499" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1578935177160" />
-    <state width="1664" height="499" key="GridCell.Tab.1.left" timestamp="1578935177159">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="325" key="GridCell.Tab.1.left" timestamp="1579181233981">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578406547966" />
+    <state width="1493" height="325" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579181233981" />
     <state width="1664" height="499" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1578935177159" />
-    <state width="1664" height="499" key="GridCell.Tab.1.right" timestamp="1578935177160">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="325" key="GridCell.Tab.1.right" timestamp="1579181233982">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578406547966" />
+    <state width="1493" height="325" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579181233982" />
     <state width="1664" height="499" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1578935177160" />
     <state width="1664" height="304" key="GridCell.Tab.2.bottom" timestamp="1578931258169">
       <screen x="0" y="0" width="1707" height="920" />
@@ -455,11 +453,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="329" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1578067501216" />
-    <state x="401" y="163" key="Vcs.Push.Dialog.v2" timestamp="1578922248793">
+    <state x="401" y="163" key="Vcs.Push.Dialog.v2" timestamp="1578936636155">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578257212448" />
-    <state x="401" y="163" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1578922248793" />
+    <state x="401" y="163" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1578936636155" />
     <state width="916" height="468" key="XDebugger.FullValuePopup" timestamp="1578926586853">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
